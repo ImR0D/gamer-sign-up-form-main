@@ -35,7 +35,7 @@ a:hover {
 .signup-layout::before {
   position: absolute;
   z-index: -1;
-  inset: 0 0 0 77.4%;
+  inset: 0 0 0 76%;
   background: url("/assets/images/pattern-backdrop.svg") center / cover
     no-repeat;
   content: "";
@@ -107,20 +107,19 @@ a:hover {
   text-transform: uppercase;
 }
 
+.login-prompt {
+  margin: var(--space-5) 0 0;
+  color: var(--color-neutral-300);
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+}
+
 @media (max-width: 1100px) {
   .signup-layout {
     grid-template-columns: minmax(0, 1fr) minmax(340px, 0.9fr);
     gap: clamp(var(--space-8), 6vw, var(--space-12));
     padding: var(--space-10);
-  }
-
-  .brand-intro h1 {
-    font-size: 40px;
-    line-height: 48px;
-  }
-
-  .brand-logo {
-    margin-bottom: var(--space-12);
   }
 }
 
@@ -136,20 +135,6 @@ a:hover {
     background-position: center top;
     background-size: 180% auto;
     opacity: 0.32;
-  }
-
-  .brand-logo {
-    width: 148px;
-    margin-bottom: var(--space-8);
-  }
-
-  .brand-intro h1 {
-    font-size: 36px;
-    line-height: 40px;
-  }
-
-  .brand-intro p {
-    margin-top: var(--space-4);
   }
 
   .form-panel {

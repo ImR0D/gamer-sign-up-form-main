@@ -5,3 +5,10 @@
   height: auto;
   margin-bottom: clamp(var(--space-12), 6vw, var(--space-20));
 }
+
+@media (max-width: 760px) {
+  .brand-logo {
+    width: 148px;
+    margin-bottom: var(--space-8);
+  }
+}

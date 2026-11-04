@@ -23,3 +23,25 @@
   letter-spacing: -0.12em;
   white-space: nowrap;
 }
+
+@media (max-width: 1100px) {
+  .brand-intro h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .brand-logo {
+    margin-bottom: var(--space-12);
+  }
+}
+
+@media (max-width: 760px) {
+  .brand-intro h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .brand-intro p {
+    margin-top: var(--space-4);
+  }
+}
