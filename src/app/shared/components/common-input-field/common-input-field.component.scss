@@ -1,0 +1,76 @@
+.form-field {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.field-label,
+.field-label-error {
+  color: var(--color-neutral-100);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.field-label::before {
+  color: var(--color-lime-500);
+  content: ">";
+}
+
+.field-label-error::before {
+  color: var(--color-red-400) !important;
+  content: "(!)" !important;
+}
+
+.form-field input {
+  width: 100%;
+  min-height: 44px;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-neutral-600);
+  border-radius: 0;
+  color: var(--color-neutral-100);
+  background: var(--color-neutral-950);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form-field .field-input::placeholder {
+  color: var(--color-neutral-500);
+  opacity: 1;
+}
+
+.form-field .field-input:hover {
+  border-color: var(--color-neutral-300);
+}
+
+.form-field .field-input:focus-visible {
+  border-color: var(--color-lime-500);
+  outline-offset: 2px;
+}
+
+.field-hint,
+.field-error {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.field-hint {
+  color: var(--color-neutral-400);
+}
+
+.field-error {
+  color: var(--color-red-400);
+}
+
+.error-highlight {
+  border-color: var(--color-red-400);
+  outline-offset: 2px;
+  outline: 2px solid var(--color-red-400);
+}
+
+.error-highlight:focus-visible {
+  border-color: var(--color-red-400);
+  outline-offset: 2px;
+  outline: 2px solid var(--color-red-400);
+}

@@ -94,6 +94,12 @@
   display: none;
 }
 
+.field-label::before *:has(.error-highlight) {
+  margin-right: var(--space-2);
+  color: var(--color-red-400);
+  content: "(!)";
+}
+
 .strength-meter {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

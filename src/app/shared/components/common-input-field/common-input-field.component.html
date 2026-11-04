@@ -1,1 +1,29 @@
-<p>common-input-field works!</p>
+<div class="form-field">
+  <label
+    [class.field-label]="error().length === 0"
+    [class.field-label-error]="error().length > 0"
+    [for]="fieldName()"
+  >
+    {{ fieldName() }}
+  </label>
+  <input
+    [class.field-input]="error().length === 0"
+    [class.error-highlight]="error().length > 0"
+    id="{{ fieldName().toLowerCase() }}"
+    name="{{ fieldName().toLowerCase() }}"
+    type="{{ fieldType().toLowerCase() }}"
+    placeholder="{{ placeholder() }}"
+    autocomplete="{{ autoComplete() }}"
+    [required]="isRequired()"
+  />
+  @if (hint().length > 0) {
+    <p class="field-hint" id="callsign-hint">
+      {{ hint() }}
+    </p>
+  }
+  @if (error().length > 0) {
+    <p class="field-error" id="email-error">
+      {{ error() }}
+    </p>
+  }
+</div>

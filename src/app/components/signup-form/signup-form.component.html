@@ -1,39 +1,20 @@
 <form class="signup-form">
-  <div class="form-field">
-    <label class="field-label" for="callsign">Callsign</label>
-    <input
-      id="callsign"
-      name="callsign"
-      type="text"
-      placeholder="e.g. Vortex_07"
-      autocomplete="nickname"
-      minlength="3"
-      maxlength="20"
-      aria-describedby="callsign-hint"
-      required
-    />
-    <p class="field-hint" id="callsign-hint">
-      3–20 characters: letters, numbers, _ or -
-    </p>
-    <p class="field-error" id="callsign-error" hidden>
-      Enter a valid callsign.
-    </p>
-  </div>
+  <app-common-input-field
+    fieldName="Callsign"
+    fieldType="text"
+    placeholder="e.g. Vortex_07"
+    autoComplete="username"
+    [isRequired]="true"
+    hint="3-20 characters: letters, numbers, _ or -"
+  />
 
-  <div class="form-field">
-    <label class="field-label" for="email">Email</label>
-    <input
-      id="email"
-      name="email"
-      type="email"
-      placeholder="you@example.com"
-      autocomplete="email"
-      required
-    />
-    <p class="field-error" id="email-error" hidden>
-      Enter a valid email address.
-    </p>
-  </div>
+  <app-common-input-field
+    fieldName="email"
+    fieldType="email"
+    placeholder="e.g. you@example.com"
+    autoComplete="email"
+    [isRequired]="true"
+  />
 
   <div class="form-field">
     <label class="field-label" for="password">Password</label>
