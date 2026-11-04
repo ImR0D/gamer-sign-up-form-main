@@ -1,0 +1,94 @@
+<form class="signup-form">
+  <div class="form-field">
+    <label class="field-label" for="callsign">Callsign</label>
+    <input
+      id="callsign"
+      name="callsign"
+      type="text"
+      placeholder="e.g. Vortex_07"
+      autocomplete="nickname"
+      minlength="3"
+      maxlength="20"
+      aria-describedby="callsign-hint"
+      required
+    />
+    <p class="field-hint" id="callsign-hint">
+      3–20 characters: letters, numbers, _ or -
+    </p>
+    <p class="field-error" id="callsign-error" hidden>
+      Enter a valid callsign.
+    </p>
+  </div>
+
+  <div class="form-field">
+    <label class="field-label" for="email">Email</label>
+    <input
+      id="email"
+      name="email"
+      type="email"
+      placeholder="you@example.com"
+      autocomplete="email"
+      required
+    />
+    <p class="field-error" id="email-error" hidden>
+      Enter a valid email address.
+    </p>
+  </div>
+
+  <div class="form-field">
+    <label class="field-label" for="password">Password</label>
+    <div class="password-control">
+      <input
+        id="password"
+        name="password"
+        type="password"
+        autocomplete="new-password"
+        minlength="8"
+        aria-describedby="password-hint"
+        required
+      />
+      <span class="password-control__icon" aria-hidden="true">
+        <img src="/assets/images/icon-eye.svg" alt="" />
+      </span>
+    </div>
+
+    <!-- Strength Meter - Allowed States: `--weak`, `--fair`, `--good`, `--strong` -->
+    <div class="strength-meter strength-meter--strong" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <p class="field-hint" id="password-hint">At least 8 characters</p>
+    <p class="field-error" id="password-error" hidden>
+      Use at least 8 characters.
+    </p>
+  </div>
+
+  <div class="form-field">
+    <label class="field-label" for="confirm-password"> Confirm password </label>
+    <div class="password-control">
+      <input
+        id="confirm-password"
+        name="confirm-password"
+        type="password"
+        autocomplete="new-password"
+        aria-describedby="confirm-password-error"
+        required
+      />
+      <span class="password-control__icon" aria-hidden="true">
+        <img src="/assets/images/icon-eye.svg" alt="" />
+      </span>
+    </div>
+    <p class="field-error" id="confirm-password-error" hidden>
+      Passwords don't match.
+    </p>
+  </div>
+
+  <div class="terms-field">
+    <input id="terms" name="terms" type="checkbox" required />
+    <label for="terms">
+      I accept the <a href="#terms">Terms</a> and
+      <a href="#privacy">Privacy Policy</a>.
+    </label>
+  </div>
+
+  <button class="submit-button" type="button">Initialize account</button>
+</form>

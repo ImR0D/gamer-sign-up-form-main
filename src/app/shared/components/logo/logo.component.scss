@@ -1,0 +1,7 @@
+.brand-logo {
+  display: block;
+  width: 169px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: clamp(var(--space-12), 6vw, var(--space-20));
+}

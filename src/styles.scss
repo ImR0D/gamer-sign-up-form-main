@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Orbitron";
+  src: url("/assets/fonts/orbitron/static/orbitron-800.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/assets/fonts/jetbrains-mono/static/jetbrains-mono-400.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/assets/fonts/jetbrains-mono/static/jetbrains-mono-700.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  font-family: "JetBrains Mono", monospace;
+  color: hsl(208 49% 92%);
+  background: hsl(214 60% 2%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --color-neutral-950: hsl(214 37% 4%);
+  --color-neutral-900: hsl(210 39% 7%);
+  --color-neutral-800: hsl(211 30% 13%);
+  --color-neutral-700: hsl(211 22% 24%);
+  --color-neutral-600: hsl(210 18% 42%);
+  --color-neutral-500: hsl(211 14% 50%);
+  --color-neutral-400: hsl(211 13% 55%);
+  --color-neutral-300: hsl(211 18% 68%);
+  --color-neutral-100: hsl(208 49% 92%);
+  --color-neutral-50: hsl(204 60% 97%);
+  --color-lime-500: hsl(77 90% 59%);
+  --color-lime-700: hsl(77 67% 39%);
+  --color-red-400: hsl(4 100% 74%);
+  --color-amber-400: hsl(40 100% 65%);
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--color-neutral-950);
+}
