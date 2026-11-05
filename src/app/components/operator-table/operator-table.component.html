@@ -2,9 +2,9 @@
   <div class="operator-status__header">
     <h2 id="operator-title">Operator ID</h2>
     <p>
-      <span id="ready-count">0</span>
+      <span id="ready-count">{{ SignUpService.fieldsValidatedCount }}</span>
       <span id="separator">/</span>
-      <span id="total-count">5</span>
+      <span id="total-count">{{ SignUpService.totalFieldsCount }}</span>
       <span id="status-text">ready</span>
     </p>
   </div>
